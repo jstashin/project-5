@@ -24,10 +24,10 @@
        
       </div>
     <div class="flex items-center bg-green-50 px-3 py-1 rounded-full text-black font-bold space-x-2">
-        <span>100</span>
+        <span id="coin-count">100</span>
          <img src="./assets/coin.png" alt=""class="w-4 h-4">
          </div>
-      <button class="bg-green-600 text-white px-4 py-1 rounded-full font-medium">
+      <button id="copy-count"class="bg-green-600 text-white px-4 py-1 rounded-full font-medium">
         2 Copy
       </button>
     </div>
@@ -58,11 +58,11 @@
     <h1 class="text-3xl text-black font-bold" >999</h1>
     <p class="px-3 py-1 rounded-full bg-neutral-400 w-10" >All</p>
     <div class="flex items-center justify-between">
- <button class="btn w-30">
+ <button class="btn btn-copy w-30">
 <i class="fa-solid fa-copy"></i>
   Copy
 </button>
-<button class="btn w-30 bg-green-700 text-white">
+<button class="btn call-btn w-30 bg-green-700 text-white">
   <i class="fa-solid fa-phone"></i>
   Call</button>
     </div>
@@ -85,11 +85,11 @@
     <h1 class="text-3xl text-black font-bold" >999</h1>
     <p class="px-3 py-1 rounded-full bg-neutral-400 w-15 " >Police</p>
     <div class="flex items-center justify-between">
- <button class="btn w-30">
+ <button class="btn btn-copy w-30">
 <i class="fa-solid fa-copy"></i>
   Copy
 </button>
-<button class="btn w-30 bg-green-700 text-white">
+<button class="btn call-btn w-30 bg-green-700 text-white">
   <i class="fa-solid fa-phone"></i>
   Call</button>
     </div>
@@ -112,11 +112,11 @@
     <h1 class="text-3xl text-black font-bold" >999</h1>
     <p class="px-3 py-1 rounded-full bg-neutral-400 w-12" >Fire</p>
     <div class="flex items-center justify-between">
- <button class="btn w-30">
+ <button class="btn btn-copy w-30">
 <i class="fa-solid fa-copy"></i>
   Copy
 </button>
-<button class="btn w-30 bg-green-700 text-white">
+<button class="btn call-btn w-30 bg-green-700 text-white">
   <i class="fa-solid fa-phone"></i>
   Call</button>
     </div>
@@ -138,11 +138,11 @@
     <h1 class="text-3xl text-black font-bold" >1994-999999</h1>
     <p class="px-3 py-1 rounded-full bg-neutral-400 w-16" >Health</p>
     <div class="flex items-center justify-between">
- <button class="btn w-30 ">
+ <button class="btn btn-copy w-30 ">
 <i class="fa-solid fa-copy"></i>
   Copy
 </button>
-<button class="btn w-30  bg-green-700 text-white">
+<button class="btn call-btn w-30  bg-green-700 text-white">
   <i class="fa-solid fa-phone"></i>
   Call</button>
     </div>
@@ -166,11 +166,11 @@
     <h1 class="text-3xl text-black font-bold" >109</h1>
     <p class="px-3 py-1 rounded-full bg-neutral-400 w-12 " >Help</p>
     <div class="flex items-center justify-between">
- <button class="btn w-30">
+ <button class="btn btn-copy w-30">
 <i class="fa-solid fa-copy"></i>
   Copy
 </button>
-<button class="btn w-30 bg-green-700 text-white">
+<button class="btn call-btn w-30 bg-green-700 text-white">
   <i class="fa-solid fa-phone"></i>
   Call</button>
     </div>
@@ -191,11 +191,11 @@
     <h1 class="text-3xl text-black font-bold" >106</h1>
     <p class="px-3 py-1 rounded-full bg-neutral-400 w-13" >Govt.</p>
     <div class="flex items-center justify-between">
- <button class="btn w-30">
+ <button class="btn btn-copy w-30">
 <i class="fa-solid fa-copy"></i>
   Copy
 </button>
-<button class="btn w-30 bg-green-700 text-white">
+<button class="btn call-btn w-30 bg-green-700 text-white">
   <i class="fa-solid fa-phone"></i>
   Call</button>
     </div>
@@ -217,11 +217,12 @@
     <h1 class="text-3xl text-black font-bold" >16216</h1>
     <p class="px-3 py-1 rounded-full bg-neutral-400 w-20" >Electricity</p>
     <div class="flex items-center justify-between">
- <button class="btn w-30">
+ <button class="btn btn-copy w-30">
+ 
 <i class="fa-solid fa-copy"></i>
   Copy
 </button>
-<button class="btn w-30 bg-green-700 text-white">
+<button class="btn call-btn w-30 bg-green-700 text-white">
   <i class="fa-solid fa-phone"></i>
   Call</button>
     </div>
@@ -237,17 +238,17 @@
   </figure>
   <div class="card-body">
     <h2 class="card-title font-bold text-black ">
-      Brac Helplone
+      Brac Helpline
     </h2>
     <p>Brac</p>
     <h1 class="text-3xl text-black font-bold" >16445</h1>
     <p class="px-3 py-1 rounded-full bg-neutral-400 w-13 " >NGO</p>
     <div class="flex items-center justify-between">
- <button class="btn w-30">
+ <button class="btn btn-copy w-30">
 <i class="fa-solid fa-copy"></i>
   Copy
 </button>
-<button class="btn w-30 bg-green-700 text-white">
+<button class="btn call-btn w-30 bg-green-700 text-white">
   <i class="fa-solid fa-phone"></i>
   Call</button>
     </div>
@@ -267,38 +268,34 @@ Bangladesh Railway Helpline
     </h2>
     <p>Bangladesh Railway</p>
     <h1 class="text-3xl text-black font-bold" >163</h1>
-    <p class="px-3 py-1 rounded-full bg-neutral-400 w-13" >Travel</p>
+    <p class="px-3 py-1 rounded-full bg-neutral-400 w-14" >Travel</p>
     <div class="flex items-center justify-between">
- <button class="btn w-30">
+ <button class="btn btn-copy w-30">
 <i class="fa-solid fa-copy"></i>
   Copy
 </button>
-<button class="btn w-30  bg-green-700 text-white">
+<button class="btn call-btn w-30  bg-green-700 text-white">
   <i class="fa-solid fa-phone"></i>
   Call</button>
     </div>
     </div>
     </div>
   </div>
-   </section>
-   <aside class="flex justify-between lg:col-span-1 bg-base-100 shadow-sm rounded-lg w-full">
-    <div class="flex space-x-2 mb-2 mt-5">
-    <i class="fa-solid fa-clock mt-1"></i>
-    <h1 class="font-bold text-sm md:text-base rounded">Call history</h1>
+</section>
+   <aside class="lg:col-span-1 bg-base-100 shadow-sm rounded-lg w-full p-4">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center space-x-2">
+      <i class="fa-solid fa-clock text-lg"></i>
+      <h1 class="font-bold text-base">Call History</h1>
     </div>
-    <div class="mt-4 mr-1">
-      <button class="btn bg-green-600 text-white rounded items-center ">Clear</button>
-    </div>
-
-
-   </aside>
-
-
-   
-        </section>
+    <button id="clear-history" class="btn bg-green-600 text-white rounded-full px-4 py-1">Clear</button>
+  </div>
+<ul id="call-history-list" class="mt-4 space-y-2 text-black text-sm">
+</ul>
+</aside>
+</section>
     </Main>
-    
-
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
+
