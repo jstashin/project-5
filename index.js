@@ -4,9 +4,7 @@ let heartCount = 0;
 for(let heartIcon of heartIcons){
   heartIcon.addEventListener("click", function(){
     heartCount++;
-    heartCounter.textContent = heartCount;
-    
-    
+    heartCounter.textContent = heartCount;  
   });
 };
 const coinCount = document.getElementById("coin-count");
@@ -46,13 +44,10 @@ timeEl.classList.add("text-black", "text-xs");
 li.append(nameSn);
 li.append(numberEl);
 li.append(timeEl);
-
-
 callHistoryList.append(li);
 
-  });
+});
 }
-
 clearBtn.addEventListener("click", function () {
   callHistoryList.innerHTML = "";
 });
@@ -60,15 +55,13 @@ const copyIcons = document.getElementsByClassName("btn-copy");
 const copyCounter = document.getElementById("copy-count");
 let copyCount = 0;
 for(let copyIcon of copyIcons){
-  copyIcon.addEventListener("click", function(){
+copyIcon.addEventListener("click", function(){
 copyCount++;
- copyCounter.textContent = copyCount;
+copyCounter.textContent = copyCount;
 const card = copyIcon.closest(".card-body");
 const hotlineNumber = card.querySelector("h1").innerText;
 navigator.clipboard.writeText(hotlineNumber).then(()=>{
         alert(`Copied: ${hotlineNumber}`);
       })
-    
-    
-  });
+});
 };
